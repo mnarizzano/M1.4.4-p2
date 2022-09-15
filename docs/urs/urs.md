@@ -138,7 +138,8 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 
 | 3.1.0 |  Lo Studente può consultare la lista dei corsi a cui è iscritto |M|
 | 3.1.1 |  Lo Studente può consultare la lista degli corsi superati con relativa votazione |M|
-| 3.2.1 |  Lo Studente può consulare la lista degli esami iscritti agli esami del suo corso |M|
+| 3.2.0 |  Lo Studente può consultare la lista degli esami a cui è iscritto del suo corso |M|
+| 3.2.1 |  Lo Studente può consultare la lista degli esami a cui può iscriversi |M|
 | 3.3.0 |  Lo Studente può iscriversi a un esame alla volta ad un corso che frequenta |M|
 | 3.3.1 |  Lo Studente può rimuovere un esame alla volta da un corso che frequenta |M|
 | 3.4.0 |  Lo Studente può verificare le sue informazioni di account - nome, cognome, id etc...|M|
