@@ -1,7 +1,5 @@
-
 ### UniSkaven UniApp
 ##### ITS ICT - Gruppo di Lavoro 2
-
 
 **VERSION : 0.1**
 
@@ -112,9 +110,40 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 <a name="sp3.2"></a>
 ### 3.2 Functional Requirements 
 
+#### 3.2.1 Requisiti Funzionali Amministrazione
+
 | ID | Descrizione | Priorità |
 | --------------- | ----------- | ---------- | 
-| 1.0 |  XXXXX |M|
+| 1.1.0 |  L'amministrazione crea profili docenti |M| 
+| 1.1.1 |  L'amministrazione può modificare l'ID dei docenti |M|
+| 1.1.2 |  L'amministrazione può modificare i dati anagrafici dei docenti |M| 
+| 1.2.0 |  L'amministrazione crea profili studenti |M|
+| 1.2.1 |  L'amministrazione può modificare l'ID degli studenti |M|
+| 1.2.2 |  L'amministrazione può modificare i dati anagrafici dei docenti |M|
+| 1.3.0 |  L'amministrazione crea corsi per ogni percorso di laurea |M|
+| 1.4.0 |  L'amministrazione assegna i docenti ai corsi |M|
+
+#### 3.2.2 Requisiti Funzionali Docenti
+
+| 2.1.0 |  Il Docente può consultare la lista dei corsi che insegna |M| 
+| 2.2.0 |  Il Docente può consultare la lista degli studenti iscritti ad ogni corso che insegna |M|
+| 2.3.0 |  Il Docente può creare ed aggiungere un esame alla volta ad un corso che insegna |M|
+| 2.3.1 |  Il Docente può rimuovere un esame alla volta da un corso che insegna |M|
+| 2.4.0 |  Il Docente può verificare le sue informazioni di account - nome, cognome, id etc...|M|
+| 2.4.1 |  Il Docente può modificare le sue informazioni di account - tranne l'ID |M|
+| 2.5.0 |  Il Docente può consulare la lista degli studenti iscritti agli esami del suo corso |M|
+| 2.6.0 |  Il Docente può assegnare una votazione ad ogni studente iscritto ad un suo esame |M|  
+
+#### 3.2.3 Requisiti Funzionali Studenti
+
+| 3.1.0 |  Lo Studente può consultare la lista dei corsi a cui è iscritto |M|
+| 3.1.1 |  Lo Studente può consultare la lista degli corsi superati con relativa votazione |M|
+| 3.2.1 |  Lo Studente può consulare la lista degli esami iscritti agli esami del suo corso |M|
+| 3.3.0 |  Lo Studente può iscriversi a un esame alla volta ad un corso che frequenta |M|
+| 3.3.1 |  Lo Studente può rimuovere un esame alla volta da un corso che frequenta |M|
+| 3.4.0 |  Lo Studente può verificare le sue informazioni di account - nome, cognome, id etc...|M|
+
+ 
 
 <a name="sp3.3"></a>
 ### 3.3 Non-Functional Requirements 
