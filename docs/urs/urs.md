@@ -124,6 +124,8 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 | 1.4.0 |  L'amministrazione assegna i docenti ai corsi |M|
 
 #### 3.2.2 Requisiti Funzionali Docenti
+
+| ID | Descrizione | Priorità |
 | --------------- | ----------- | ---------- | 
 | 2.1.0 |  Il Docente può consultare la lista dei corsi che insegna |M| 
 | 2.2.0 |  Il Docente può consultare la lista degli studenti iscritti ad ogni corso che insegna |M|
@@ -135,6 +137,8 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 | 2.6.0 |  Il Docente può assegnare una votazione ad ogni studente iscritto ad un suo esame |M|  
 
 #### 3.2.3 Requisiti Funzionali Studenti
+
+| ID | Descrizione | Priorità |
 | --------------- | ----------- | ---------- | 
 | 3.1.0 |  Lo Studente può consultare la lista dei corsi a cui è iscritto |M|
 | 3.1.1 |  Lo Studente può consultare la lista degli corsi superati con relativa votazione |M|
