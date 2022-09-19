@@ -153,7 +153,7 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 | --------------- | ----------- | ---------- | 
 | R1 | Il software deve essere compatibile con Windows, MACOS, e Linux |M|
 | R2 | Il software deve essere accessibile tramite tutti i browser |M|
-| R3 | Il software deve essere accessibile tramite app dedicata (Android e IoS) |S|
+| R3 | Il software deve essere accessibile tramite app dedicata (Android e IoS) |D|
 | R4 | Il software deve rispettare i dettami del GDPR |M|
 | R5 | Il software deve appoggiarsi su un database dedicato |M|
 | R6 | Il database deve avere back-up bigiornalieri sia in fisico che in cloud ai fini di una veloce disaster recovery |M|
