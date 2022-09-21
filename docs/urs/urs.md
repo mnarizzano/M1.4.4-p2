@@ -119,7 +119,6 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 | 1.1.2 |  L'amministrazione può modificare i dati anagrafici dei docenti |M| 
 | 1.2.0 |  L'amministrazione crea profili studenti |M|
 | 1.2.1 |  L'amministrazione può modificare l'ID degli studenti |M|
-| 1.2.2 |  L'amministrazione può modificare i dati anagrafici dei docenti |M|
 | 1.3.0 |  L'amministrazione crea corsi per ogni percorso di laurea |M|
 | 1.4.0 |  L'amministrazione assegna i docenti ai corsi |M|
 
@@ -137,7 +136,7 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 #### 3.2.3 Requisiti Funzionali Studenti
 
 | 3.1.0 |  Lo Studente può consultare la lista dei corsi a cui è iscritto |M|
-| 3.1.1 |  Lo Studente può consultare la lista degli corsi superati con relativa votazione |M|
+| 3.1.1 |  Lo Studente può consultare la lista dei corsi superati con relativa votazione |M|
 | 3.2.0 |  Lo Studente può consultare la lista degli esami a cui è iscritto del suo corso |M|
 | 3.2.1 |  Lo Studente può consultare la lista degli esami a cui può iscriversi |M|
 | 3.3.0 |  Lo Studente può iscriversi a un esame alla volta ad un corso che frequenta |M|
@@ -153,7 +152,7 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 | --------------- | ----------- | ---------- | 
 | R1 | Il software deve essere compatibile con Windows, MACOS, e Linux |M|
 | R2 | Il software deve essere accessibile tramite tutti i browser |M|
-| R3 | Il software deve essere accessibile tramite app dedicata (Android e IoS) |S|
+| R3 | Il software deve essere accessibile tramite app dedicata (Android e IoS) |D|
 | R4 | Il software deve rispettare i dettami del GDPR |M|
 | R5 | Il software deve appoggiarsi su un database dedicato |M|
 | R6 | Il database deve avere back-up bigiornalieri sia in fisico che in cloud ai fini di una veloce disaster recovery |M|
