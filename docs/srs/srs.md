@@ -24,6 +24,7 @@ Tiziano De Falco
 	3. [Lista Funzionalità](#sp1.3)
 2. [Scenari](#p2)
 	1. [Login](#sp2.1)
+	1.1 [Autenticazione](#sp2.1.1)
 	2. [Consulta Lista Corsi](#sp2.2)
 	3. [Lista Studenti iscritti al corso](#sp2.3)
 	4. [Elenco Esami Attivi Corso](#sp2.4)
@@ -94,8 +95,9 @@ Tiziano De Falco
 | 1. | L'utente inserisce la sua ID |
 | 2. | L'utente inserisce la password |
 | 3. | Il Sistema conferma che che la combinazione delle credenziali è valida e corrisponde ad un utente | 
-| Postcondizione: | L'utente ha accesso al sistema; il sistema scarica o aggiorna un token di autenticazione |
-| 3a | Scenario Alternativo: L'utente inserisce credenziali non valide |
+| 4. | Il sistema scarica o aggiorna il certificato di autenticazione |
+| Postcondizione: | L'utente ha accesso al sistema |
+| 3a | Scenario Alternativo: Autneticazione non valida |
 | 1. | Il sistema segnala che non esiste un account per l'ID inserito |
 | 2. | Il sistema suggerisce di contattare l'Amministrazione per la creazione di un account |
 | 3. | Il sistema ritorna al punto 1 principale |
@@ -108,6 +110,22 @@ Tiziano De Falco
 | 2. | Il sistema blocca l'account e invia una mail di sblocco all'utente |
 | 3. | Il sistema invita l'utente ad aggiornare la password dalla mail |
 
+<a name ="sp2.1.1"></a>
+
+| ID: 1.1 | Autenticazione (Opzionale se pre-condizione è semplicemente "avere un certificato valido") |
+| ----------- | ----------- | 
+| Attore | Docente, Studente, Amministrazione (Principale) |
+| Tipo | Secondario | 
+| Precondizione | |
+| Scenario Principale | |
+| 1. | Il sistema controlla che la password ed ID siano valide e corrispondano ad un utente |
+| 2. | Il sistema autentica le credenziali |
+| 3. | Il sistema rilascia o aggiorna il certificato di autenticazione |
+| Postcondizione: | L'utente è autentificato |
+|| Scenario Alternativo: Certificato Scaduto |
+|| Scenario Alternativo: Certificato Non Valido |
+
+
 <a name="sp2.2"></a>
 
 ### 2.2 Consulta Lista Corsi
@@ -116,7 +134,7 @@ Tiziano De Falco
 | ----------- | ----------- | 
 | Attore | Docente (Principale), Studente (Principale) |
 | Tipo | Primario |
-| Precondizione | L'utente ha un'autenticazione valida; l'utente è autorizzato ad accedere ai corsi |
+| Precondizione | L'utente ha un certificato di autenticazione valido; l'utente è autorizzato ad accedere ai corsi |
 | Scenario Principale | |
 | 1. | L'Utente seleziona l'anno scolastico |
 | 2. | Il Sistema riporta i corsi di quell'anno per cui il docente è registrato |
@@ -132,7 +150,7 @@ Tiziano De Falco
 | ----------- | ----------- | 
 | Attore | Docente (Principale), Amministrazione (Principale) |
 | Tipo | Primario | 
-| Precondizione | Autenticazione valida; Il Docente insegna il corso dell'esame |
+| Precondizione | L'utente ha un certificato di autenticazione valido; Il Docente insegna il corso dell'esame |
 | Scenario Principale | |
 | 1. | Il Docente seleziona il corso |
 | 2. | Il Docente sceglie l'opzione "Mostra Studenti Iscritti" |
@@ -149,7 +167,7 @@ Tiziano De Falco
 | Attore | Docente (Principale) |
 | Tipo | Primario | 
 | Precondizione | |
-| Scenario Principale | Autenticazione valida; Il Docente insegna il corso dell'esame |
+| Scenario Principale | L'utente ha un certificato di autenticazione valido; Il Docente insegna il corso dell'esame |
 | 1. | Il Docente selezione il corso |
 | 2. | Il Docente clicca su opzione "Lista Esami Corso" |
 | 3. | Il Sistema mostra la lista degli esami del corso. |
@@ -163,7 +181,7 @@ Tiziano De Falco
 | ----------- | ----------- | 
 | Attore | Docente (Principale) |
 | Tipo | Primario | 
-| Precondizione | Autenticazione valida; Il Docente insegna il corso dell'esame |
+| Precondizione | L'utente ha un certificato di autenticazione valido; Il Docente insegna il corso dell'esame |
 | Scenario Principale | |
 | 1. | L'utente visualizza la lista esami del corso |
 | 2. | L'utense sceglie l'opzione "Aggiungi Esame" |
