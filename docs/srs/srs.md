@@ -85,7 +85,7 @@ Tiziano De Falco
 
 ### 2.1 Login
 
-| ID: 1 | <u>Login<\u> |
+| ID: 1 | <u>Login</u> |
 | ----------- | ----------- | 
 | Attore | Docente, Studente, Amministrazione |
 | Tipo | Primario | 
@@ -112,7 +112,7 @@ Tiziano De Falco
 
 ### 2.2 Consulta Lista Corsi
 
-| ID: 2 | Consulta Lista Corsi |
+| ID: 2 | <b>Consulta Lista Corsi</b> |
 | ----------- | ----------- | 
 | Attore | Docente (Principale), Studente (Principale) |
 | Tipo | Primario |
@@ -128,7 +128,7 @@ Tiziano De Falco
 
 ### 2.3 Lista Studenti iscritti al corso
 
-| ID: 3 | Lista Studenti iscritti al corso |
+| ID: 3 | <b>Lista Studenti iscritti al corso </b> |
 | ----------- | ----------- | 
 | Attore | Docente (Principale), Amministrazione (Principale) |
 | Tipo | Primario | 
@@ -144,7 +144,7 @@ Tiziano De Falco
 
 ### 2.4 Elenco Esami Attivi Corso
 
-| ID: 4 | Elenco Esami Attivi Corso |
+| ID: 4 | <b>Elenco Esami Attivi Corso</b> |
 | ----------- | ----------- | 
 | Attore | Docente (Principale) |
 | Tipo | Primario | 
@@ -159,7 +159,7 @@ Tiziano De Falco
 
 ### 2.5 Aggiunta Esame Corso
 
-| ID: 5 | Aggiunta Esame Corso |
+| ID: 5 | <b>Aggiunta Esame Corso</b> |
 | ----------- | ----------- | 
 | Attore | Docente (Principale) |
 | Tipo | Primario | 
