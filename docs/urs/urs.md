@@ -96,8 +96,8 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 | ----------- | ----------- | ----------- |
 |Personale Amministrativo Uni-Skaven| Presidente Uni-Skaven, Direttori Dipartimenti, Personale Segreteria, Responsabile iscrizione Studenti, Responsabile immatricolazione Studenti, Responsabile di corso, Responsabile Borse di Studio | Gestire organizzazione di iscrizioni, immatricolazioni, corsi nonchè il personale |
 |Personale Informatico Uni-Skaven| Amministratore di Sistema, Manutentore | Poter verificare e modificare le funzionalità e i permessi del sistema |
-|Personale Scolatisco Uni-Skaven| Docenti | |
-|Personale Scolatisco Uni-Skaven| Studenti | |
+|Personale Scolatisco Uni-Skaven| Docenti | Gestisce i corsi di cui è assegnato come docente, le liste degli studenti iscritti e gli appelli |
+|Personale Scolatisco Uni-Skaven| Studenti | Gestisce i corsi a cui è iscritto, si iscrive agli esami e consulta i relativi voti |
 
 #### Regolatori
 | Gruppo | Ruoli |
@@ -119,7 +119,8 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 | 0.1.1 | I corsi non hanno un limite di docenti o studenti iscritti |M|
 | 0.1.2 | Ogni corso richiede il superamento di almeno un esame da parte di uno studente specifico per essere superato |M|
 | 0.1.3 | Un docente può registrare un voto per uno studente solo se è iscritto ad almeno un esame attivo del corso |M|
-
+| 0.1.4 | Un docente non può registrare un voto ad uno studente che ha già un voto per il suo corso |M|
+| 0.1.5 | Uno studente non può iscriversi ad un esame di un corso che ha già superato |M|
 
 #### 3.2.1 Requisiti Funzionali Amministrazione
 
@@ -139,9 +140,10 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 | --------------- | ----------- | ---------- | 
 | 2.1.0 |  Il Docente può consultare la lista dei corsi che insegna |M| 
 | 2.2.0 |  Il Docente può consultare la lista degli studenti iscritti ad un corso che insegna |M|
-| 2.3.0 |  Il Docente visualizza elenco degli esami del corso |M|
+| 2.3.0 |  Il Docente visualizza elenco degli esami di un corso che insegna |M|
 | 2.3.1 |  Il Docente può creare ed aggiungere un esame alla volta ad un corso che insegna |M|
 | 2.3.2 |  Il Docente può rimuovere un esame alla volta da un corso che insegna |M|
+| 2.3.3 |  Il Docente può spostare un esame alla volta in un corso che insegna |M|
 | 2.4.0 |  Il Docente può verificare le sue informazioni di account - nome, cognome, id etc...|M|
 | 2.4.1 |  Il Docente può modificare le sue informazioni di account - tranne l'ID |M|
 | 2.5.0 |  Il Docente può consulare la lista degli studenti iscritti agli esami del suo corso |M|
