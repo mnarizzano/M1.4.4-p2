@@ -6,12 +6,13 @@
 **Authors**  
 Serena Schincaglia
 Federico Zunino
-De Falco Tiziano
+Tiziano De Falco
 
 **REVISION HISTORY**
 
 | Version    | Date        | Authors      | Notes        |
 | ----------- | ----------- | ----------- | ----------- |
+|0.1| 22/09 | Seren, Federico, Tiziano | Update lista funzionalità e scenario |
 |0.1| 22/09 | Federico Zunino | Creazione documento srs, update lista attori|
 
 # Table of Contents
