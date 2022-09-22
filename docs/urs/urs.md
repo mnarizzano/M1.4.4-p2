@@ -11,7 +11,7 @@ Federico Zunino
 
 | Version    | Date        | Authors      | Notes        |
 | ----------- | ----------- | ----------- | ----------- |
-| 0.1 | 22/09/2022 | Federico | Update Funzionalità Docente|
+| 0.1 | 22/09/2022 | Federico | Update Funzionalità Docente e Requisiti di Sistema |
 | 0.1 | 15/09/2022 | Federico| Update URS document, Part 1, 2, 3 tranne Functional Requirements |
 | 0.1 | 15/09/2022 | Serena Schincaglia| Update URS document, Functional Requirements |
 | 0.1 | 08/09/2022 | Serena Schincaglia, Federico Zunino | Tests Classi |
@@ -92,11 +92,12 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 ### 3.1 Stakeholders
 
 #### Utenti
-| Gruppo | Ruoli |
-| ----------- | ----------- | 
-|Personale Amministrativo Uni-Skaven| Presidente Uni-Skaven, Direttori Dipartimenti, Personale Segreteria, Responsabile iscrizione Studenti, Responsabile immatricolazione Studenti, Responsabile di corso, Responsabile Borse di Studio|
-|Personale Informatico Uni-Skaven| Amministratore di Sistema, Manutentore |
-|Personale Scolastico Uni-Skaven| Docenti, Studenti |
+| Gruppo | Ruoli | Obiettivo |
+| ----------- | ----------- | ----------- |
+|Personale Amministrativo Uni-Skaven| Presidente Uni-Skaven, Direttori Dipartimenti, Personale Segreteria, Responsabile iscrizione Studenti, Responsabile immatricolazione Studenti, Responsabile di corso, Responsabile Borse di Studio | Gestire organizzazione di iscrizioni, immatricolazioni, corsi nonchè il personale |
+|Personale Informatico Uni-Skaven| Amministratore di Sistema, Manutentore | Poter verificare e modificare le funzionalità e i permessi del sistema |
+|Personale Scolatisco Uni-Skaven| Docenti | |
+|Personale Scolatisco Uni-Skaven| Studenti | |
 
 #### Regolatori
 | Gruppo | Ruoli |
@@ -110,6 +111,15 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 
 <a name="sp3.2"></a>
 ### 3.2 Functional Requirements 
+
+#### 3.2.0 Requisiti di Sistema
+| ID | Descrizione | Priorità |
+| --------------- | ----------- | ---------- | 
+| 0.1.0 | Ogni corso deve avere almeno 1 docente per essere considerato attivo e permettere iscrizioni studenti |M|
+| 0.1.1 | I corsi non hanno un limite di docenti o studenti iscritti |M|
+| 0.1.2 | Ogni corso richiede il superamento di almeno un esame da parte di uno studente specifico per essere superato |M|
+| 0.1.3 | Un docente può registrare un voto per uno studente solo se è iscritto ad almeno un esame attivo del corso |M|
+
 
 #### 3.2.1 Requisiti Funzionali Amministrazione
 
@@ -149,7 +159,7 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 | 3.3.1 |  Lo Studente può rimuovere un esame alla volta da un corso che frequenta |M|
 | 3.4.0 |  Lo Studente può verificare le sue informazioni di account - nome, cognome, id etc...|M|
 
- 
+
 
 <a name="sp3.3"></a>
 ### 3.3 Non-Functional Requirements 
