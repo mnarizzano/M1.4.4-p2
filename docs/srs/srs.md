@@ -67,7 +67,7 @@ Tiziano De Falco
 
 ### 1.3 Lista e Funzionalità 
 | ID | Nome | Descrizione |
-| ----------- | ----------- | 
+| ----------- | ----------- | ----------- | 
 | 1 | Login | L'utente accede con credenziali valide al sistema |
 | 2 | Consulta Lista Corsi | L'utente accede alla lista dei corsi a cui è iscritto |
 | 3 | Lista Studenti iscritti al corso | L'utente può visualizzare l'elenco degli studenti iscritti al corso|
@@ -78,7 +78,7 @@ Tiziano De Falco
 
 ## Scenari
 
-<a name="p2.1"></a>
+<a name="sp2.1"></a>
 
 ### 2.1 Login
 
@@ -105,7 +105,7 @@ Tiziano De Falco
 | 2. | Il sistema blocca l'account e invia una mail di sblocco all'utente |
 | 3. | Il sistema invita l'utente ad aggiornare la password dalla mail |
 
-<a name="p2.2"></a>
+<a name="sp2.2"></a>
 
 ### 2.2 Consulta Lista Corsi
 
@@ -121,7 +121,7 @@ Tiziano De Falco
 | 4. | Il sistema mostra le informazioni identificative del corso |
 | Postcondizione | L'Utente ha accesso alle informazioni del corso specificato |
 
-<a name="p2.3"></a>
+<a name="sp2.3"></a>
 
 ### 2.3 Lista Studenti iscritti al corso
 
@@ -137,7 +137,7 @@ Tiziano De Falco
 | Postcondizione: | Il docente ha accesso alla lista degli studenti iscritti ad un corso |
 
 
-<a name="p2.4"></a>
+<a name="sp2.4"></a>
 
 ### 2.4 Elenco Esami Attivi Corso
 
@@ -152,7 +152,7 @@ Tiziano De Falco
 | 3. | Il Sistema mostra la lista degli esami del corso. |
 | Postcondizione: | Il Docente visualizza la lista degli esami attivi |
 
-<a name="p2.5"></a>
+<a name="sp2.5"></a>
 
 ### 2.5 Aggiunta Esame Corso
 
@@ -171,53 +171,53 @@ Tiziano De Falco
 | Postcondizione: | L'esame per il corso è stato creato |
 
 
-<a name="p2.6"></a>
+<a name="sp2.6"></a>
 
 ### 2.6
 
-<a name="p2.7"></a>
+<a name="sp2.7"></a>
 
 ### 2.7
 
-<a name="p2.8"></a>
+<a name="sp2.8"></a>
 
 ### 2.8
 
-<a name="p2.9"></a>
+<a name="sp2.9"></a>
 
 ### 2.9
 
-<a name="p2.10"></a>
+<a name="sp2.10"></a>
 
 ### 2.10
 
-<a name="p2.11"></a>
+<a name="sp2.11"></a>
 
 ### 2.11
 
-<a name="p2.12"></a>
+<a name="sp2.12"></a>
 
 ### 2.12
 
-<a name="p2.13"></a>
+<a name="sp2.13"></a>
 
 ### 2.13
 
-<a name="p2.14"></a>
+<a name="sp2.14"></a>
 
 ### 2.14
 
-<a name="p2.15"></a>
+<a name="sp2.15"></a>
 
 ### 2.15
 
-<a name="p2.16"></a>
+<a name="sp2.16"></a>
 
 ### 2.16
 
-<a name="p2.16"></a>
+<a name="sp2.17"></a>
 
-### 2.16
+### 2.17
 
 <a name="p2.17"></a>
 
