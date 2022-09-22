@@ -89,7 +89,7 @@ Tiziano De Falco
 | ----------- | ----------- | 
 | Attore | Docente, Studente, Amministrazione |
 | Tipo | Primario | 
-| Precondizione | L'utente ha delle credenziali valide per il sistema |
+| Precondizione | L'utente ha delle credenziali uniche e personali valide per il sistema |
 | Scenario Principale | |
 | 1. | L'utente inserisce la sua ID |
 | 2. | L'utente inserisce la password |
