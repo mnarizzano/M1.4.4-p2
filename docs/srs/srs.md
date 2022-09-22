@@ -59,8 +59,8 @@ Tiziano De Falco
 
 | Nome | Descrizione |
 | ----------- | ----------- | 
-|Studente| Utente frequentante i corsi di Skaven University e che passa esami fino alla laurea |
-|Docente| Utente che insegna uno o più corsi a Skaven Univerisity e esamina gli Studenti |
+|Studente| Utente frequentante i corsi di Skaven University che vuole iscriveri agli esami e consultare le informazioni sui corsi |
+|Docente| Utente che insegna uno o più corsi a Skaven Univerisity, consulta le informazioni e gli elenchi dei corsi e assegna voti agli esami |
 |Amministrazione| Utente generale dell'amministrazione che crea i corsi, i profili degl altri utenti e ne gestisce le info uniche, come l'ID |
 
 <a name="sp1.3"></a>
