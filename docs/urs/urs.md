@@ -11,6 +11,7 @@ Federico Zunino
 
 | Version    | Date        | Authors      | Notes        |
 | ----------- | ----------- | ----------- | ----------- |
+| 0.1 | 22/09/2022 | Federico | Update Funzionalità Docente|
 | 0.1 | 15/09/2022 | Federico| Update URS document, Part 1, 2, 3 tranne Functional Requirements |
 | 0.1 | 15/09/2022 | Serena Schincaglia| Update URS document, Functional Requirements |
 | 0.1 | 08/09/2022 | Serena Schincaglia, Federico Zunino | Tests Classi |
@@ -127,9 +128,10 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 | ID | Descrizione | Priorità |
 | --------------- | ----------- | ---------- | 
 | 2.1.0 |  Il Docente può consultare la lista dei corsi che insegna |M| 
-| 2.2.0 |  Il Docente può consultare la lista degli studenti iscritti ad ogni corso che insegna |M|
-| 2.3.0 |  Il Docente può creare ed aggiungere un esame alla volta ad un corso che insegna |M|
-| 2.3.1 |  Il Docente può rimuovere un esame alla volta da un corso che insegna |M|
+| 2.2.0 |  Il Docente può consultare la lista degli studenti iscritti ad un corso che insegna |M|
+| 2.3.0 |  Il Docente visualizza elenco degli esami del corso |M|
+| 2.3.1 |  Il Docente può creare ed aggiungere un esame alla volta ad un corso che insegna |M|
+| 2.3.2 |  Il Docente può rimuovere un esame alla volta da un corso che insegna |M|
 | 2.4.0 |  Il Docente può verificare le sue informazioni di account - nome, cognome, id etc...|M|
 | 2.4.1 |  Il Docente può modificare le sue informazioni di account - tranne l'ID |M|
 | 2.5.0 |  Il Docente può consulare la lista degli studenti iscritti agli esami del suo corso |M|
