@@ -48,6 +48,7 @@ De Falco Tiziano
 | ID | Nome | Descrizione |
 | ----------- | ----------- | 
 | 1 | Login | L'utente accede con credenziali valide al sistema |
+| 2 | Consulta Lista Corsi | L'utente accede alla lista dei corsi a cui è iscritto |
 
 <a name="p2"></a>
 
@@ -82,4 +83,16 @@ De Falco Tiziano
 
 <a name="p2.2"></a>
 
-### 2.2
+### 2.2 Consulta Lista Corsi
+
+| ID: 2 | Consulta Lista Corsi |
+| ----------- | ----------- | 
+| Attore | Docente (Principale), Studente (Principale) |
+| Tipo | Primario |
+| Precondizione | L'utente ha un'autenticazione valida; l'utente è autorizzato ad accedere ai corsi |
+| Scenario Principale | |
+| 1. | L'Utente seleziona l'anno scolastico |
+| 2. | Il Sistema riporta i corsi di quell'anno per cui il docente è registrato |
+| 3. | L'Utente clicca sul corso che vuole esaminare |
+| 4. | Il sistema mostra le informazioni identificative del corso |
+| Postcondizione | L'Utente ha accesso alle informazioni del corso specificato |
