@@ -112,12 +112,12 @@ Gli studenti Uni-Skaven potranno iscriversi e disiscriversi ai corsi, agli esami
 <a name="sp3.2"></a>
 ### 3.2 Functional Requirements 
 
-#### 3.2.0 Requisiti di Sistema
+#### 3.2.0 Requisiti Generali
 | ID | Descrizione | Priorità |
 | --------------- | ----------- | ---------- | 
 | 0.1.0 | Ogni corso deve avere almeno 1 docente per essere considerato attivo e permettere iscrizioni studenti |M|
 | 0.1.1 | I corsi non hanno un limite di docenti o studenti iscritti |M|
-| 0.1.2 | Ogni corso richiede il superamento di almeno un esame da parte di uno studente specifico per essere superato |M|
+| 0.1.2 | Il sistema deve permettere agli utenti di segnalare errori |M|
 | 0.1.3 | Un docente può registrare un voto per uno studente solo se è iscritto ad almeno un esame attivo del corso |M|
 | 0.1.4 | Un docente non può registrare un voto ad uno studente che ha già un voto per il suo corso |M|
 | 0.1.5 | Uno studente non può iscriversi ad un esame di un corso che ha già superato |M|
