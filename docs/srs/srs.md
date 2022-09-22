@@ -12,7 +12,7 @@ Tiziano De Falco
 
 | Version    | Date        | Authors      | Notes        |
 | ----------- | ----------- | ----------- | ----------- |
-|0.1| 22/09 | Seren, Federico, Tiziano | Update lista funzionalità e scenario |
+|0.1| 22/09 | Seren, Federico, Tiziano | Update lista funzionalità e scenario 1 to 5 |
 |0.1| 22/09 | Federico Zunino | Creazione documento srs, update lista attori|
 
 # Table of Contents
