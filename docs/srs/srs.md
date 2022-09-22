@@ -93,17 +93,17 @@ Tiziano De Falco
 | Scenario Principale | |
 | 1. | L'utente inserisce la sua ID |
 | 2. | L'utente inserisce la password |
-| 3. | Il Sistema conferma che che le credenziali sono valide | 
+| 3. | Il Sistema conferma che che la combinazione delle credenziali è valida e corrisponde ad un utente | 
 | Postcondizione: | L'utente ha accesso al sistema; il sistema scarica o aggiorna un token di autenticazione |
-| 2a | Scenario Alternativo: L'utente inserisce credenziali non valide |
+| 3a | Scenario Alternativo: L'utente inserisce credenziali non valide |
 | 1. | Il sistema segnala che non esiste un account per l'ID inserito |
 | 2. | Il sistema suggerisce di contattare l'Amministrazione per la creazione di un account |
 | 3. | Il sistema ritorna al punto 1 principale |
-| 2b | Scenario Alternativo: L'utente inserisce la password non corretta < 3 volte |
+| 3b | Scenario Alternativo: L'utente inserisce la password non corretta < 3 volte |
 | 1. | Il sistema notifica che la password non è valida e invita a digitarla di nuovo |
 | 2. | Il sistema incrementa il counter dei fallimenti |
 | 3. | Il sistema torna al punto 2 principale |
-| 2c | Scenario Alternativo: L'utente inserisce la password non valide per la terza volta |
+| 3c | Scenario Alternativo: L'utente inserisce la password non valide per la terza volta |
 | 1. | Il sistema notifica che la password è errata per la terza volta |
 | 2. | Il sistema blocca l'account e invia una mail di sblocco all'utente |
 | 3. | Il sistema invita l'utente ad aggiornare la password dalla mail |
