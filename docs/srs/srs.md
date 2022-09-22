@@ -40,6 +40,12 @@ De Falco Tiziano
 
 ### 1.2 Attori
 
+| Nome | Descrizione |
+| ----------- | ----------- | 
+|Studente| |
+|Docente| |
+|Amministrazione| |
+
 <a name="sp1.3"></a>
 
 ### 1.3 Lista e Funzionalità 
