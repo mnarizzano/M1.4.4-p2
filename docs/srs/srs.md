@@ -24,9 +24,9 @@ Tiziano De Falco
 2. [Scenari](#p2)
 	1. [Login](#sp2.1)
 	2. [Consulta Lista Corsi](#sp2.2)
-	3. [](#sp2.3)
-	4. [](#sp2.4)
-	5. [](#sp2.5)
+	3. [Lista Studenti iscritti al corso](#sp2.3)
+	4. [Elenco Esami Attivi Corso](#sp2.4)
+	5. [Aggiunta Esame Corso](#sp2.5)
 	6. [](#sp2.6)
 	7. [](#sp2.7)
 	8. [](#sp2.8)
@@ -70,6 +70,9 @@ Tiziano De Falco
 | ----------- | ----------- | 
 | 1 | Login | L'utente accede con credenziali valide al sistema |
 | 2 | Consulta Lista Corsi | L'utente accede alla lista dei corsi a cui è iscritto |
+| 3 | Lista Studenti iscritti al corso | L'utente può visualizzare l'elenco degli studenti iscritti al corso|
+| 4 | Elenco Esami Attivi Corso | L'utente visualizza gli esami attivi per il corso selezionato |
+| 5 | Aggiunta Esame Corso | L'utente aggiunge un appello al corso selezionato | 
 
 <a name="p2"></a>
 
@@ -120,15 +123,53 @@ Tiziano De Falco
 
 <a name="p2.3"></a>
 
-### 2.3
+### 2.3 Lista Studenti iscritti al corso
+
+| ID: 3 | Lista Studenti iscritti al corso |
+| ----------- | ----------- | 
+| Attore | Docente (Principale), Amministrazione (Principale) |
+| Tipo | Primario | 
+| Precondizione | Autenticazione valida; Il Docente insegna il corso dell'esame |
+| Scenario Principale | |
+| 1. | Il Docente seleziona il corso |
+| 2. | Il Docente sceglie l'opzione "Mostra Studenti Iscritti" |
+| 3. | Il Sistema fornisce l'elenco degli studenti iscritti al corso |
+| Postcondizione: | Il docente ha accesso alla lista degli studenti iscritti ad un corso |
+
 
 <a name="p2.4"></a>
 
-### 2.4
+### 2.4 Elenco Esami Attivi Corso
+
+| ID: 4 | Elenco Esami Attivi Corso |
+| ----------- | ----------- | 
+| Attore | Docente (Principale) |
+| Tipo | Primario | 
+| Precondizione | |
+| Scenario Principale | Autenticazione valida; Il Docente insegna il corso dell'esame |
+| 1. | Il Docente selezione il corso |
+| 2. | Il Docente clicca su opzione "Lista Esami Corso" |
+| 3. | Il Sistema mostra la lista degli esami del corso. |
+| Postcondizione: | Il Docente visualizza la lista degli esami attivi |
 
 <a name="p2.5"></a>
 
-### 2.5
+### 2.5 Aggiunta Esame Corso
+
+| ID: 5 | Aggiunta Esame Corso |
+| ----------- | ----------- | 
+| Attore | Docente (Principale) |
+| Tipo | Primario | 
+| Precondizione | Autenticazione valida; Il Docente insegna il corso dell'esame |
+| Scenario Principale | |
+| 1. | L'utente visualizza la lista esami del corso |
+| 2. | L'utense sceglie l'opzione "Aggiungi Esame" |
+| 3. | L'utente inserisce la data/le date dell'appello |
+| 4. | L'utente salva le informazioni |
+| 5. | Il Sistema notifica la creazione dell'appello |
+| 6. | Il Sistema invia una mail a tutti gli iscritti al corso |
+| Postcondizione: | L'esame per il corso è stato creato |
+
 
 <a name="p2.6"></a>
 
