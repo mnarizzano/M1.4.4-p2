@@ -12,11 +12,7 @@ De Falco Tiziano
 
 | Version    | Date        | Authors      | Notes        |
 | ----------- | ----------- | ----------- | ----------- |
-| 0.1 | 15/09/2022 | Federico| Update URS document, Part 1, 2, 3 tranne Functional Requirements |
-| 0.1 | 15/09/2022 | Serena Schincaglia| Update URS document, Functional Requirements |
-| 0.1 | 08/09/2022 | Serena Schincaglia, Federico Zunino | Tests Classi |
-| 0.1 | 05/09/2022 | Federico Zunino | Creazione classi "Corso" e "Docente" e relative funzioni |
-| 0.1 | 05/09/2022 | Serena Schincaglia | Creazione classi "Studente", "Voto", "Esame" e relative funzioni |
+|0.1| 22/09 | Federico Zunino | Creazione documento srs, lista attori|
 
 # Table of Contents
 
@@ -42,9 +38,9 @@ De Falco Tiziano
 
 | Nome | Descrizione |
 | ----------- | ----------- | 
-|Studente| |
-|Docente| |
-|Amministrazione| |
+|Studente| Utente frequentante i corsi di Skaven University e che passa esami fino alla laurea |
+|Docente| Utente che insegna uno o più corsi a Skaven Univerisity e esamina gli Studenti |
+|Amministrazione| Utente generale dell'amministrazione che crea i corsi, i profili degl altri utenti e ne gestisce le info uniche, come l'ID |
 
 <a name="sp1.3"></a>
 
