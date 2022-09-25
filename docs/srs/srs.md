@@ -29,11 +29,11 @@ Tiziano De Falco
 	3. [Lista Studenti iscritti al corso](#sp2.3)
 	4. [Elenco Esami Attivi Corso](#sp2.4)
 	5. [Aggiunta Esame Corso](#sp2.5)
-	6. [](#sp2.6)
-	7. [](#sp2.7)
-	8. [](#sp2.8)
-	9. [](#sp2.9)
-	10. [](#sp2.10)
+	6. [Consulta Lista Corsi superati con relativa votazione](#sp2.6)
+	7. [Consulta Lista Esami a cui è iscritto](#sp2.7)
+	8. [Consulta Lista Esami a cui è iscriversi](#sp2.8)
+	9. [Rimuovere iscrizione ad un Esame](#sp2.9)
+	10. [Informazioni Account](#sp2.10)
 	11. [](#sp2.11)
 	12. [](#sp2.12)
 	13. [](#sp2.13)
@@ -182,7 +182,7 @@ Tiziano De Falco
 | Attore | Docente (Principale) |
 | Tipo | Primario | 
 | Precondizione | L'utente ha un certificato di autenticazione valido; Il Docente insegna il corso dell'esame |
-| Scenario Principale | |
+| Scenario Principale |
 | 1. | L'utente visualizza la lista esami del corso |
 | 2. | L'utense sceglie l'opzione "Aggiungi Esame" |
 | 3. | L'utente inserisce la data/le date dell'appello |
@@ -194,23 +194,86 @@ Tiziano De Falco
 
 <a name="sp2.6"></a>
 
-### 2.6
+### 2.6 Consulta Corsi superati con relativa votazione
+
+| ID: 6 |<b>Consulta Corsi superati con relativa votazione</b>|
+| ---------- | ------------|
+| Attore | Studente (Principale) |
+| Tipo | Primario |
+| Precondizione |L'utente ha un certificato di autenticazione valido; Lo studente è iscritto all'università |
+| Scenario principale |
+| 1. | L'utente visualizza la lista dei corsi |
+| 2. | L'utense sceglie l'opzione "Visualizza corsi superati" |
+| 3. | L'utense sceglie l'opzione "Visualizza votazione" del corso desiderato |
+| Postcondizione: | Lo studente visualizza la lista dei corsi superati |
 
 <a name="sp2.7"></a>
 
-### 2.7
+### 2.7 Consulta Lista Esami a cui è iscritto
+
+| ID: 7 |<b>Consulta Lista degli esami a cui è iscritto</b> |
+| ---------- | ------------|
+| Attore | Studente (Principale)|
+| Tipo | Primario|
+| Precondizione | L'utente ha un certificato di autenticazione valido; l'utente è autorizzato ad accedere ai corsi |
+| Scenario Principale | |
+| 1. | L'Utente seleziona l'anno scolastico |
+| 2. | Il Sistema riporta gli esami di quell'anno per cui lo studente è iscritto |
+| 3. | L'Utente clicca sull'esame che vuole esaminare |
+| 4. | Il sistema mostra le informazioni identificative dell'esame |
+| Postcondizione | L'Utente ha accesso alle informazioni dell'esame specificato |
 
 <a name="sp2.8"></a>
 
-### 2.8
+### 2.8 Consulta Lista degli esami a cui iscriversi
+
+| ID: 8 |<b>Consulta Lista degli esami a cui iscriversi</b> |
+| ---------- | ------------|
+| Attore | Studente (Principale)|
+| Tipo | Primario|
+| Precondizione | L'utente ha un certificato di autenticazione valido; Lo stuente è iscritto al corso dell'esame |
+| Scenario Principale |
+| 1. | L'utente visualizza la lista esami del corso |
+| 2. | L'utense sceglie l'opzione "Aggiungi Esame" |
+| 4. | L'utente visualizza la data/le date dell'appello |
+| 5. | L'utente salva le informazioni |
+| 6. | Il Sistema notifica l'iscrizione all'appello |
+| 6. | Il Sistema invia una mail al docente del corso |
+| Postcondizione: | Lo studente è iscritto all'esame |
 
 <a name="sp2.9"></a>
 
-### 2.9
+### 2.9 Rimuovere iscrizione ad un Esame
+
+|ID: 9 |<b>Rimuovere iscrizione ad un Esame</b> |
+| ---------- | ------------|
+| Attore | Studente (Principale) |
+| Tipo | Primario|
+| Preconzione | L'utente ha un certificato di autenticazione valido; Lo studente è iscritto al corso dell'esame |
+| Scenario Principale |
+| 1. | L'utente visualizza la lista esami del corso |
+| 2. | L'utense sceglie l'opzione "Visualizza Esame" |
+| 3. | L'utente sceglie l'opzione "Rimuovi Esame" |
+| 5. | L'utente salva le informazioni |
+| 6. | Il Sistema notifica l'iscrizione all'appello |
+| 6. | Il Sistema invia una mail al docente del corso |
+| Postcondizione: | Lo studente ha rimosso l'iscritto all'esame |
 
 <a name="sp2.10"></a>
 
-### 2.10
+### 2.10 Informazioni Account
+
+| ID: 10 |<b>Informazioni Account</b> |
+| ---------- | ------------|
+| Attore | Studente (Principale) |
+| Tipo | Primario|
+| Precondizione | L'utente ha un certificato di autenticazione valido; Lo studente è iscritto all'università |
+| Scenario Principale |
+| 1. | Lo studente sceglie l'opzione "visualizza account" |
+| 2. | Lo studente può consultare le sue informazioni |
+| 3. | Lo studente può modificare o lasciarle invariate |
+| 5. | L'utente salva le informazioni |
+| Postcondizione | Lo studente verifica le informazioni di account|
 
 <a name="sp2.11"></a>
 
