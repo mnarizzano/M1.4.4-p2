@@ -12,6 +12,7 @@ Tiziano De Falco
 
 | Version    | Date        | Authors      | Notes        |
 | ----------- | ----------- | ----------- | ----------- |
+|0.1| 22/09 | Serena | Update Diagramma UML |
 |0.1| 22/09 | Seren, Federico, Tiziano | Update lista funzionalità e scenario 1 to 5 |
 |0.1| 22/09 | Federico Zunino | Creazione documento srs, update lista attori|
 
@@ -23,6 +24,7 @@ Tiziano De Falco
 	3. [Lista Funzionalità](#sp1.3)
 2. [Scenari](#p2)
 	1. [Login](#sp2.1)
+	1.1 [Autenticazione](#sp2.1.1)
 	2. [Consulta Lista Corsi](#sp2.2)
 	3. [Lista Studenti iscritti al corso](#sp2.3)
 	4. [Elenco Esami Attivi Corso](#sp2.4)
@@ -53,6 +55,8 @@ Tiziano De Falco
 
 ### 1.1 Diagramma
 
+![Diagramma UML](https://github.com/mnarizzano/M1.4.4-p2/blob/main/docs/srs/imgs/Es%20UniSkaven.png)
+
 <a name="sp1.2"></a>
 
 ### 1.2 Attori
@@ -82,38 +86,55 @@ Tiziano De Falco
 
 ### 2.1 Login
 
-| ID: 1 | <u>Login<\u> |
+| ID: 1 | <u>Login</u> |
 | ----------- | ----------- | 
 | Attore | Docente, Studente, Amministrazione |
 | Tipo | Primario | 
-| Precondizione | L'utente ha delle credenziali valide per il sistema |
+| Precondizione | L'utente ha delle credenziali uniche e personali valide per il sistema |
 | Scenario Principale | |
 | 1. | L'utente inserisce la sua ID |
 | 2. | L'utente inserisce la password |
-| 3. | Il Sistema conferma che che le credenziali sono valide | 
-| Postcondizione: | L'utente ha accesso al sistema; il sistema scarica o aggiorna un token di autenticazione |
-| 2a | Scenario Alternativo: L'utente inserisce credenziali non valide |
+| 3. | Il Sistema conferma che che la combinazione delle credenziali è valida e corrisponde ad un utente | 
+| 4. | Il sistema scarica o aggiorna il certificato di autenticazione |
+| Postcondizione: | L'utente ha accesso al sistema |
+| 3a | Scenario Alternativo: Autneticazione non valida |
 | 1. | Il sistema segnala che non esiste un account per l'ID inserito |
 | 2. | Il sistema suggerisce di contattare l'Amministrazione per la creazione di un account |
 | 3. | Il sistema ritorna al punto 1 principale |
-| 2b | Scenario Alternativo: L'utente inserisce la password non corretta < 3 volte |
+| 3b | Scenario Alternativo: L'utente inserisce la password non corretta < 3 volte |
 | 1. | Il sistema notifica che la password non è valida e invita a digitarla di nuovo |
 | 2. | Il sistema incrementa il counter dei fallimenti |
 | 3. | Il sistema torna al punto 2 principale |
-| 2c | Scenario Alternativo: L'utente inserisce la password non valide per la terza volta |
+| 3c | Scenario Alternativo: L'utente inserisce la password non valide per la terza volta |
 | 1. | Il sistema notifica che la password è errata per la terza volta |
 | 2. | Il sistema blocca l'account e invia una mail di sblocco all'utente |
 | 3. | Il sistema invita l'utente ad aggiornare la password dalla mail |
+
+<a name ="sp2.1.1"></a>
+
+| ID: 1.1 | Autenticazione (Opzionale se pre-condizione è semplicemente "avere un certificato valido") |
+| ----------- | ----------- | 
+| Attore | Docente, Studente, Amministrazione (Principale) |
+| Tipo | Secondario | 
+| Precondizione | |
+| Scenario Principale | |
+| 1. | Il sistema controlla che la password ed ID siano valide e corrispondano ad un utente |
+| 2. | Il sistema autentica le credenziali |
+| 3. | Il sistema rilascia o aggiorna il certificato di autenticazione |
+| Postcondizione: | L'utente è autentificato |
+|| Scenario Alternativo: Certificato Scaduto |
+|| Scenario Alternativo: Certificato Non Valido |
+
 
 <a name="sp2.2"></a>
 
 ### 2.2 Consulta Lista Corsi
 
-| ID: 2 | Consulta Lista Corsi |
+| ID: 2 | <b>Consulta Lista Corsi</b> |
 | ----------- | ----------- | 
 | Attore | Docente (Principale), Studente (Principale) |
 | Tipo | Primario |
-| Precondizione | L'utente ha un'autenticazione valida; l'utente è autorizzato ad accedere ai corsi |
+| Precondizione | L'utente ha un certificato di autenticazione valido; l'utente è autorizzato ad accedere ai corsi |
 | Scenario Principale | |
 | 1. | L'Utente seleziona l'anno scolastico |
 | 2. | Il Sistema riporta i corsi di quell'anno per cui il docente è registrato |
@@ -125,11 +146,11 @@ Tiziano De Falco
 
 ### 2.3 Lista Studenti iscritti al corso
 
-| ID: 3 | Lista Studenti iscritti al corso |
+| ID: 3 | <b>Lista Studenti iscritti al corso </b> |
 | ----------- | ----------- | 
 | Attore | Docente (Principale), Amministrazione (Principale) |
 | Tipo | Primario | 
-| Precondizione | Autenticazione valida; Il Docente insegna il corso dell'esame |
+| Precondizione | L'utente ha un certificato di autenticazione valido; Il Docente insegna il corso dell'esame |
 | Scenario Principale | |
 | 1. | Il Docente seleziona il corso |
 | 2. | Il Docente sceglie l'opzione "Mostra Studenti Iscritti" |
@@ -141,12 +162,12 @@ Tiziano De Falco
 
 ### 2.4 Elenco Esami Attivi Corso
 
-| ID: 4 | Elenco Esami Attivi Corso |
+| ID: 4 | <b>Elenco Esami Attivi Corso</b> |
 | ----------- | ----------- | 
 | Attore | Docente (Principale) |
 | Tipo | Primario | 
 | Precondizione | |
-| Scenario Principale | Autenticazione valida; Il Docente insegna il corso dell'esame |
+| Scenario Principale | L'utente ha un certificato di autenticazione valido; Il Docente insegna il corso dell'esame |
 | 1. | Il Docente selezione il corso |
 | 2. | Il Docente clicca su opzione "Lista Esami Corso" |
 | 3. | Il Sistema mostra la lista degli esami del corso. |
@@ -156,11 +177,11 @@ Tiziano De Falco
 
 ### 2.5 Aggiunta Esame Corso
 
-| ID: 5 | Aggiunta Esame Corso |
+| ID: 5 | <b>Aggiunta Esame Corso</b> |
 | ----------- | ----------- | 
 | Attore | Docente (Principale) |
 | Tipo | Primario | 
-| Precondizione | Autenticazione valida; Il Docente insegna il corso dell'esame |
+| Precondizione | L'utente ha un certificato di autenticazione valido; Il Docente insegna il corso dell'esame |
 | Scenario Principale | |
 | 1. | L'utente visualizza la lista esami del corso |
 | 2. | L'utense sceglie l'opzione "Aggiungi Esame" |
