@@ -34,13 +34,13 @@ Tiziano De Falco
 	8. [Consulta Lista Esami a cui è iscriversi](#sp2.8)
 	9. [Rimuovere iscrizione ad un Esame](#sp2.9)
 	10. [Informazioni Account](#sp2.10)
-	11. [](#sp2.11)
-	12. [](#sp2.12)
-	13. [](#sp2.13)
-	14. [](#sp2.14)
-	15. [](#sp2.15)
-	16. [](#sp2.16)
-	17. [](#sp2.17)
+	11. [Creazione dei dipartimenti](#sp2.11)
+	12. [Creazione scheda personale docente](#sp2.12)
+	13. [Modifica dell'ID dei docenti](#sp2.13)
+	14. [Creazione profilo studente](#sp2.14)
+	15. [Modifica dell'ID degli studenti](#sp2.15)
+	16. [Creazione dei corsi di laurea](#sp2.16)
+	17. [Creazione dei singoli insegnamenti](#sp2.17)
 	18. [](#sp2.18)
 	19. [](#sp2.19)
 	20. [](#sp2.20)
@@ -277,31 +277,106 @@ Tiziano De Falco
 
 <a name="sp2.11"></a>
 
-### 2.11
+### 2.11 Creazione dipartimenti
+| ID: 11|<b>Creazione dipartimenti</b> |
+| ---------- | ------------|
+| Attore | Amministratore |
+| Tipo | Primario |
+| Precondizione | L'utente ha un certificato di autenticazione valido |
+| Scenario Principale |
+|1. | L'Amministratore crea il modello Dipartimento |
+|2. | L'Amministratore per ogni Dipartimento istanzia i relativi Oggetti |
+|3. | L'Amministratore salva tutte le informazioni inserite |
+|4. | L'Amministratore verifica che i Dipartimenti creati corrispondano a quelli delle direttive di Ateneo |
+| Postcondizione | L'Amministratore può procedere ad inserire le schede docenti per ogni dipartimento |
 
 <a name="sp2.12"></a>
 
-### 2.12
+### 2.12 Creazione scheda docente
+| ID: 12|<b>Creazione scheda personale docente</b> |
+| ---------- | ------------|
+| Attore | Amministratore |
+| Tipo | Primario |
+| Precondizione | L'utente ha un certificato di autenticazione valido; l'utente ha creato la lista dei Dipartimenti |
+| Scenario Principale |
+|1. | L'Amministratore crea la classe docente |
+|2. | Il costruttore della classe docente acquisice i seguenti dati in input: {Nome, Cognome, Data di Nascita, Luogo di Nascita, Residenza, Codice Fiscale, Area            disciplinare, Insegnamenti attivi, Periodo di servizio, tipo di contratto, Conto corrente stipendio, Notizie di servizio, lista recapiti personali} |
+|3. | L'amministratore assegna la scheda docente al Dipartimento prescelto |
+|4. | L'Amministratore salva tutte le informazioni inserite |
+|Postcondizione| Si ottiene l'organigramma del personale docente |
+|Scenario secondario| problema nell'inserimento dei dati nei campi e coerenza dei dati |
 
 <a name="sp2.13"></a>
 
-### 2.13
+### 2.13 Modifica ID docenti
+| ID: 13|<b> Modifica dell'ID dei docenti </b> |
+| ---------- | ------------|
+| Attore | Amministratore |
+| Tipo | Primario |
+|Precondizione| L'utente ha un certificato di autenticazione valido; l'utente ha creato la lista dei Dipartimenti |
+|Scenario principale|
+|1. | l'Amministratore cerca il docente in base al codice fiscale |
+|2. | l'Amministratore può modificare le informazioni della scheda aggiornandole |
+|3. | l'Amministratore può modificare le informazioni della scheda cancellandole |
+|Postcondizione| Schedario personale aggiornato |
+|Scenario secondario| Problemi nella sovrascrittura dei dati |
 
 <a name="sp2.14"></a>
 
-### 2.14
-
+### 2.14 Creazione profilo studente
+| ID: 14|<b> Creazione profilo studente </b> |
+| ---------- | ------------|
+| Attore | Amministratore |
+| Tipo | Primario |
+|Precondizione| L'utente ha un certificato di autenticazione valido |
+|Scenario principale|
+|1. | l'Amministratore crea la classe studente |
+|2. | Il costruttore della classe studente acquisisce i seguenti dati in input: {Nome, Cognome, Data di nascita, Luogo di Nascita, Residenza, Codice Fiscale, Lista           recapiti personali, Scuola superiore di provenienza, voto di diploma di maturità, Certificazione ISEE-U, Ricevuta pagamento iscrizione all'universita per l'a.a.,       Data di iscrizione all'a.a., Iscrizione al corso di Laurea offerto dall’Università, Piano di Studi per l’anno a.a. corrente} |
+|3. | Per ogni aspirante universitario viene istanziato un oggetto di tipo studente |
+|Postcondizione| la classe studente permette: il calcolo di tasse e benefici, l'assegnazione di una matricola, la creazione di una carriera universitaria, la         creazione del libretto universitario digitale |
+|Scenario secondario| problema nell'inserimento dei dati nei campi e coerenza dei dati |
 <a name="sp2.15"></a>
 
-### 2.15
-
+### 2.15 Modifica ID studenti
+| ID: 15|<b> Modifica dell'ID degli studenti </b> |
+| ---------- | ------------|
+| Attore | Amministratore |
+| Tipo | Primario |
+|Precondizione| L'utente ha un certificato di autenticazione valido, l'utente ha creato un profilo studente |
+|Scenario principale|
+|1. | l'Amministratore cerca studente tramite numero matricola
+|2. | l'Amministratore può modificare le informazioni della scheda aggiornandole |
+|3. | l'Amministratore può modificare le informazioni della scheda cancellandole |
+|Postcondizione| Schedario studenti aggiornato |
+|Scenario secondario| problemi nella sovrascrittura dei dati |
 <a name="sp2.16"></a>
 
-### 2.16
+### 2.16 Creazione dei corsi di laurea
+| ID: 16|<b> Creazione dei corsi di laurea </b> |
+| ---------- | ------------|
+| Attore | Amministratore |
+| Tipo | Primario |
+|Precondizione| L'utente ha un certificato di autenticazione valido |
+|Scenario principale|
+|1. | Creazione di una classe Laurea |
+|2. | Creati tanti oggetti quanti sono i corsi di laurea |
+|Postcondizione| Si ottiene lista dei corsi di laurea, successivamente vanno inseriti gli insegnamenti |
+|Scenario secondario| incogruenze con le direttive di Ateneo |
 
 <a name="sp2.17"></a>
 
-### 2.17
+### 2.17 Creazione degli insegnamenti
+| ID: 17|<b> Creazione dei singoli insegnamenti </b> |
+| ---------- | ------------|
+| Attore | Amministratore |
+| Tipo | Primario |
+|Precondizione| L'utente ha un certificato di autenticazione valido, l'utente ha creato i corsi di laurea |
+|Scenario principale|
+|1. | Creazione di una classe insegnamento |
+|2. | Il costruttore della classe insegnamento acquisisce i seguenti dati in input: {titolo, area disciplinare, codice, docente, CFU, ore totali, programma} |
+|3. | Istanziati tanti oggetti insegnamento quanti sono gli insegnamenti offerti dall'Ateneo |
+|4. | Ogni insegnamento va inserito nel corso di Laurea deciso dall'Ateneo |
+|Postcondizione| Ogni corso di laurea ha la sua lista di insegnamenti |
 
 <a name="p2.17"></a>
 
