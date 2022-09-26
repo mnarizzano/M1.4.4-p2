@@ -425,7 +425,26 @@ Tiziano De Falco
 | 3. | L'utente aggiorna le informazioni che desidera modificare |
 | 4. | L'utente salva le modifiche |
 | 5. | Il Sistema notifica il successo nel salvataggio delle modifiche |
-| 6. | Il Sistema riporta il Docente al riepilogo informazioni |
+| 6. | Il Sistema riporta l'utente al riepilogo informazioni |
 | Postcondizione: | L'utente ha modificato le sue info account |
 
 <a name="p2.19"></a>
+
+### 2.20 Aggiorna voto esame studente
+| ID: 20 | <b> Aggiunta voto esame studente </b> |
+| ----------- | ----------- | 
+| Attore | Docente(Primario), Studente(Secondario)|
+| Tipo | Primario | 
+| Precondizione | L'utente ha un certificato di autenticazione valido, l'utente è inserito nel gruppo user "Docenti", l'utente è un docente per il corso d'esame |
+| Scenario Principale | |
+| 1. | L'utente seleziona il corso per cui lo studente ha sostenuto l'esame| 
+| 2. | L'utente seleziona l'appello che lo studento ha sostenuto |
+| 3. | L'utente seleziona lo studente a cui aggiungere il voto |
+| 4. | L'utente inserisce il voto d'esame |
+| 5. | L'utente conferma che il voto non è aggiornabile e salva le modifiche |
+| 6. | Il Sistema notifica il successo nel salvataggio delle modifiche |
+| 7. | Il Sistema notifica lo studente il cui voto è stato inserito |
+| 8. | Il Sistema riporta l'utente alla lista degli studenti che hanno sostenuto l'esame |
+| Postcondizione: | L'utente ha aggiunto il voto d'esame ad uno studente |
+
+<a name="p2.20"></a>
