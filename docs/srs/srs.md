@@ -31,7 +31,7 @@ Tiziano De Falco
 	5. [Aggiunta Esame Corso](#sp2.5)
 	6. [Consulta Lista Corsi superati con relativa votazione](#sp2.6)
 	7. [Consulta Lista Esami a cui è iscritto](#sp2.7)
-	8. [Consulta Lista Esami a cui è iscriversi](#sp2.8)
+	8. [Iscrizione Esami](#sp2.8)
 	9. [Rimuovere iscrizione ad un Esame](#sp2.9)
 	10. [Informazioni Account](#sp2.10)
 	11. [Creazione dei dipartimenti](#sp2.11)
@@ -41,10 +41,10 @@ Tiziano De Falco
 	15. [Modifica dell'ID degli studenti](#sp2.15)
 	16. [Creazione dei corsi di laurea](#sp2.16)
 	17. [Creazione dei singoli insegnamenti](#sp2.17)
-	18. [](#sp2.18)
-	19. [](#sp2.19)
-	20. [](#sp2.20)
-	21. [](#sp2.21)
+	18. [Elimina Esame](#sp2.18)
+	19. [Aggiorna profilo utente](#sp2.19)
+	20. [Aggiunte voto ad esame](#sp2.20)
+	21. [Lista Studenti iscritti ad esame](#sp2.21)
 	22. [](#sp2.22)
 
 <a name="p1"></a>
@@ -77,6 +77,23 @@ Tiziano De Falco
 | 3 | Lista Studenti iscritti al corso | L'utente può visualizzare l'elenco degli studenti iscritti al corso|
 | 4 | Elenco Esami Attivi Corso | L'utente visualizza gli esami attivi per il corso selezionato |
 | 5 | Aggiunta Esame Corso | L'utente aggiunge un appello al corso selezionato | 
+| 6 | Consulta Lista Corsi superati | L'utente consulta la lista dei corsi che ha superato, con relativa votazione |
+| 7 | Consulta Esami a cui è iscritto | L'utente accede alla lista degli esami a cui è iscritto e alle relative informazioni di ognuno |
+| 8 | Iscrizione Esami | L'utente visualizza le date  degli appelli disponibili e si iscrive |
+| 9 | Rimuovere iscrizione ad un Esame | L'utente si disiscrive da un esame a cui è iscritto |
+| 10 | Informazioni Account | L'utente consulta le informazioni del suo profilo |
+| 11 | Creazione dipartimento | L'utente crea un nuovo dipartimento |
+| 12 | Creazione profilo docente | L'utente crea un nuovo profilo docente |
+| 13 | Modifica dell'ID dei docenti | L'utente aggiorna l'ID del docente |
+| 14 | Creazione profilo studente | L'utente crea un nuovo profilo studente |
+| 15 | Modifica dell'ID degli studenti | L'utente aggiorna l'ID dello studente |
+| 16 | Creazione corso di laurea | L'utente crea un nuovo corso di laurea |
+| 17 | Creazione insegnamento | L'utente crea un nuovo insegnamento |
+| 18 | Elimina Esame | L'utente elimina l'esame selezionato |
+| 19 | Aggiorna profilo utente | L'utente aggiorna le sue info ad esclusione dell'ID |
+| 20 | Aggiunte voto ad esame | L'utente aggiunge la votazione all'esame di uno studente |
+| 21 | Lista Studenti iscritti ad esame | L'utente accede alla lista degli studenti iscritti ad un esame |
+| 22 |  |  |
 
 <a name="p2"></a>
 
@@ -166,8 +183,8 @@ Tiziano De Falco
 | ----------- | ----------- | 
 | Attore | Docente (Principale) |
 | Tipo | Primario | 
-| Precondizione | |
-| Scenario Principale | L'utente ha un certificato di autenticazione valido; Il Docente insegna il corso dell'esame |
+| Precondizione | L'utente ha un certificato di autenticazione valido; Il Docente insegna il corso dell'esame |
+| Scenario Principale | |
 | 1. | Il Docente selezione il corso |
 | 2. | Il Docente clicca su opzione "Lista Esami Corso" |
 | 3. | Il Sistema mostra la lista degli esami del corso. |
@@ -182,7 +199,7 @@ Tiziano De Falco
 | Attore | Docente (Principale) |
 | Tipo | Primario | 
 | Precondizione | L'utente ha un certificato di autenticazione valido; Il Docente insegna il corso dell'esame |
-| Scenario Principale |
+| Scenario Principale | |
 | 1. | L'utente visualizza la lista esami del corso |
 | 2. | L'utense sceglie l'opzione "Aggiungi Esame" |
 | 3. | L'utente inserisce la data/le date dell'appello |
@@ -201,7 +218,7 @@ Tiziano De Falco
 | Attore | Studente (Principale) |
 | Tipo | Primario |
 | Precondizione |L'utente ha un certificato di autenticazione valido; Lo studente è iscritto all'università |
-| Scenario principale |
+| Scenario principale | |
 | 1. | L'utente visualizza la lista dei corsi |
 | 2. | L'utense sceglie l'opzione "Visualizza corsi superati" |
 | 3. | L'utense sceglie l'opzione "Visualizza votazione" del corso desiderato |
@@ -209,9 +226,9 @@ Tiziano De Falco
 
 <a name="sp2.7"></a>
 
-### 2.7 Consulta Lista Esami a cui è iscritto
+### 2.7 Consulta Esami a cui è iscritto
 
-| ID: 7 |<b>Consulta Lista degli esami a cui è iscritto</b> |
+| ID: 7 |<b>Consulta Esami a cui è iscritto</b> |
 | ---------- | ------------|
 | Attore | Studente (Principale)|
 | Tipo | Primario|
@@ -225,19 +242,19 @@ Tiziano De Falco
 
 <a name="sp2.8"></a>
 
-### 2.8 Consulta Lista degli esami a cui iscriversi
+### 2.8 Iscrizione Esami
 
-| ID: 8 |<b>Consulta Lista degli esami a cui iscriversi</b> |
+| ID: 8 |<b>Iscrizione Esami</b> |
 | ---------- | ------------|
 | Attore | Studente (Principale)|
 | Tipo | Primario|
 | Precondizione | L'utente ha un certificato di autenticazione valido; Lo stuente è iscritto al corso dell'esame |
-| Scenario Principale |
+| Scenario Principale | |
 | 1. | L'utente visualizza la lista esami del corso |
 | 2. | L'utense sceglie l'opzione "Aggiungi Esame" |
 | 4. | L'utente visualizza la data/le date dell'appello |
-| 5. | L'utente salva le informazioni |
-| 6. | Il Sistema notifica l'iscrizione all'appello |
+| 5. | L'utente conferma l'iscrizione |
+| 6. | Il Sistema notifica all'utente l'iscrizione all'appello |
 | 6. | Il Sistema invia una mail al docente del corso |
 | Postcondizione: | Lo studente è iscritto all'esame |
 
@@ -250,11 +267,11 @@ Tiziano De Falco
 | Attore | Studente (Principale) |
 | Tipo | Primario|
 | Preconzione | L'utente ha un certificato di autenticazione valido; Lo studente è iscritto al corso dell'esame |
-| Scenario Principale |
+| Scenario Principale | |
 | 1. | L'utente visualizza la lista esami del corso |
 | 2. | L'utense sceglie l'opzione "Visualizza Esame" |
 | 3. | L'utente sceglie l'opzione "Rimuovi Esame" |
-| 5. | L'utente salva le informazioni |
+| 5. | L'utente conferma la disiscrizione |
 | 6. | Il Sistema notifica l'iscrizione all'appello |
 | 6. | Il Sistema invia una mail al docente del corso |
 | Postcondizione: | Lo studente ha rimosso l'iscritto all'esame |
@@ -265,13 +282,13 @@ Tiziano De Falco
 
 | ID: 10 |<b>Informazioni Account</b> |
 | ---------- | ------------|
-| Attore | Studente (Principale) |
+| Attore | Studente (Principale), Docente(Principale) |
 | Tipo | Primario|
-| Precondizione | L'utente ha un certificato di autenticazione valido; Lo studente è iscritto all'università |
-| Scenario Principale |
-| 1. | Lo studente sceglie l'opzione "visualizza account" |
-| 2. | Lo studente può consultare le sue informazioni |
-| 3. | Lo studente può modificare o lasciarle invariate |
+| Precondizione | L'utente ha un certificato di autenticazione valido; l'utente è iscritto all'università |
+| Scenario Principale | |
+| 1. | L'utente sceglie l'opzione "visualizza account" |
+| 2. | L'utente può consultare le sue informazioni |
+| 3. | L'utente può modificare o lasciarle invariate |
 | 5. | L'utente salva le informazioni |
 | Postcondizione | Lo studente verifica le informazioni di account|
 
@@ -280,25 +297,25 @@ Tiziano De Falco
 ### 2.11 Creazione dipartimenti
 | ID: 11|<b>Creazione dipartimenti</b> |
 | ---------- | ------------|
-| Attore | Amministratore |
+| Attore | Amministratore (Principale) |
 | Tipo | Primario |
 | Precondizione | L'utente ha un certificato di autenticazione valido |
-| Scenario Principale |
-|1. | L'Amministratore crea il modello Dipartimento |
-|2. | L'Amministratore per ogni Dipartimento istanzia i relativi Oggetti |
-|3. | L'Amministratore salva tutte le informazioni inserite |
-|4. | L'Amministratore verifica che i Dipartimenti creati corrispondano a quelli delle direttive di Ateneo |
-| Postcondizione | L'Amministratore può procedere ad inserire le schede docenti per ogni dipartimento |
+| Scenario Principale | |
+|1. | L'utente sceglie il modello Dipartimento |
+|2. | L'utente per ogni Dipartimento istanzia i relativi Oggetti |
+|3. | L'utente salva tutte le informazioni inserite |
+|4. | L'utente verifica che i Dipartimenti creati corrispondano a quelli delle direttive di Ateneo |
+| Postcondizione | L'utente ha creato un nuovo dipartimento |
 
 <a name="sp2.12"></a>
 
-### 2.12 Creazione scheda docente
-| ID: 12|<b>Creazione scheda personale docente</b> |
+### 2.12 Creazione Profilo Docente
+| ID: 12|<b>Creazione Profilo Docente </b> |
 | ---------- | ------------|
 | Attore | Amministratore |
 | Tipo | Primario |
 | Precondizione | L'utente ha un certificato di autenticazione valido; l'utente ha creato la lista dei Dipartimenti |
-| Scenario Principale |
+| Scenario Principale | |
 |1. | L'Amministratore crea la classe docente |
 |2. | Il costruttore della classe docente acquisice i seguenti dati in input: {Nome, Cognome, Data di Nascita, Luogo di Nascita, Residenza, Codice Fiscale, Area            disciplinare, Insegnamenti attivi, Periodo di servizio, tipo di contratto, Conto corrente stipendio, Notizie di servizio, lista recapiti personali} |
 |3. | L'amministratore assegna la scheda docente al Dipartimento prescelto |
@@ -314,7 +331,7 @@ Tiziano De Falco
 | Attore | Amministratore |
 | Tipo | Primario |
 |Precondizione| L'utente ha un certificato di autenticazione valido; l'utente ha creato la lista dei Dipartimenti |
-|Scenario principale|
+|Scenario principale| |
 |1. | l'Amministratore cerca il docente in base al codice fiscale |
 |2. | l'Amministratore può modificare le informazioni della scheda aggiornandole |
 |3. | l'Amministratore può modificare le informazioni della scheda cancellandole |
@@ -329,7 +346,7 @@ Tiziano De Falco
 | Attore | Amministratore |
 | Tipo | Primario |
 |Precondizione| L'utente ha un certificato di autenticazione valido |
-|Scenario principale|
+|Scenario principale| |
 |1. | l'Amministratore crea la classe studente |
 |2. | Il costruttore della classe studente acquisisce i seguenti dati in input: {Nome, Cognome, Data di nascita, Luogo di Nascita, Residenza, Codice Fiscale, Lista           recapiti personali, Scuola superiore di provenienza, voto di diploma di maturità, Certificazione ISEE-U, Ricevuta pagamento iscrizione all'universita per l'a.a.,       Data di iscrizione all'a.a., Iscrizione al corso di Laurea offerto dall’Università, Piano di Studi per l’anno a.a. corrente} |
 |3. | Per ogni aspirante universitario viene istanziato un oggetto di tipo studente |
@@ -343,7 +360,7 @@ Tiziano De Falco
 | Attore | Amministratore |
 | Tipo | Primario |
 |Precondizione| L'utente ha un certificato di autenticazione valido, l'utente ha creato un profilo studente |
-|Scenario principale|
+|Scenario principale| |
 |1. | l'Amministratore cerca studente tramite numero matricola
 |2. | l'Amministratore può modificare le informazioni della scheda aggiornandole |
 |3. | l'Amministratore può modificare le informazioni della scheda cancellandole |
@@ -351,13 +368,13 @@ Tiziano De Falco
 |Scenario secondario| problemi nella sovrascrittura dei dati |
 <a name="sp2.16"></a>
 
-### 2.16 Creazione dei corsi di laurea
-| ID: 16|<b> Creazione dei corsi di laurea </b> |
+### 2.16 Creazione corso di laurea
+| ID: 16|<b> Creazione corso di laurea </b> |
 | ---------- | ------------|
 | Attore | Amministratore |
 | Tipo | Primario |
 |Precondizione| L'utente ha un certificato di autenticazione valido |
-|Scenario principale|
+| Scenario principale | |
 |1. | Creazione di una classe Laurea |
 |2. | Creati tanti oggetti quanti sono i corsi di laurea |
 |Postcondizione| Si ottiene lista dei corsi di laurea, successivamente vanno inseriti gli insegnamenti |
@@ -365,13 +382,13 @@ Tiziano De Falco
 
 <a name="sp2.17"></a>
 
-### 2.17 Creazione degli insegnamenti
-| ID: 17|<b> Creazione dei singoli insegnamenti </b> |
+### 2.17 Creazione insegnamento
+| ID: 17|<b> Creazione insegnamento </b> |
 | ---------- | ------------|
-| Attore | Amministratore |
+| Attore | Amministratore (Principale) |
 | Tipo | Primario |
 |Precondizione| L'utente ha un certificato di autenticazione valido, l'utente ha creato i corsi di laurea |
-|Scenario principale|
+|Scenario principale | |
 |1. | Creazione di una classe insegnamento |
 |2. | Il costruttore della classe insegnamento acquisisce i seguenti dati in input: {titolo, area disciplinare, codice, docente, CFU, ore totali, programma} |
 |3. | Istanziati tanti oggetti insegnamento quanti sono gli insegnamenti offerti dall'Ateneo |
@@ -380,4 +397,35 @@ Tiziano De Falco
 
 <a name="p2.17"></a>
 
-### 2.17
+### 2.18 Elimina Esame
+| ID: 18 | <b> Elimina Esame </b>  |
+| ----------- | ----------- | 
+| Attore | Docente(Primario) |
+| Tipo | Primario | 
+| Precondizione | L'utente ha un certificato di autenticazione valido, l'utente è inserito nel gruppo user "Docenti" |
+| Scenario Principale | |
+| 1. | L'utente seleziona Esame che desidera cancellare |
+| 2. | L'utente seleziona opzione "Elimina Esame" |
+| 3. | Il Sistema chiede conferma della scelta |
+| 4. | L'utente da la conferma |
+| 5. | Il Sistema da conferma dell'avvenuta cancellazione |
+| Postcondizione: | L'esame scelto è stato cancellato |
+
+<a name="p2.18"></a>
+
+### 2.19 Aggiorna Profilo Utente
+| ID: 19 | <b> Aggiorna Profilo Utente </b> |
+| ----------- | ----------- | 
+| Attore | Studente(Primario), Docente(Primario)|
+| Tipo | Primario | 
+| Precondizione | L'utente ha un certificato di autenticazione valido, l'utente ha un profilo attivo |
+| Scenario Principale | |
+| 1. | L'utente seleziona l'opzione "modifica informazioni" | 
+| 2. | Il Sistema presenta le tab info che possono essere modificate (non ID) |
+| 3. | L'utente aggiorna le informazioni che desidera modificare |
+| 4. | L'utente salva le modifiche |
+| 5. | Il Sistema notifica il successo nel salvataggio delle modifiche |
+| 6. | Il Sistema riporta il Docente al riepilogo informazioni |
+| Postcondizione: | L'utente ha modificato le sue info account |
+
+<a name="p2.19"></a>
